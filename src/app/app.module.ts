@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { RoutingModule } from './routes/routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialImportsModule } from './material-imports.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RoutingModule } from './routes/routing.module';
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    BrowserAnimationsModule,
+    MaterialImportsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
