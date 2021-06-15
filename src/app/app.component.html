@@ -1,25 +1,34 @@
-<mat-toolbar>Tyler Guice</mat-toolbar>
+<mat-toolbar>  
+  <a href="#home" mat-button>Tyler Guice</a>
+  <div class="header-menu">
+    <a href="#about" mat-button>About</a>
+    <a href="#resume" mat-button>Resume</a>
+    <a href="#skills" mat-button>Skills</a>
+    <a href="#testimonials" mat-button>Testimonials</a>
+    <a href="#contact" mat-button>Contact</a>
+  </div>
+</mat-toolbar>
 
-<div class="splash-page-container"> 
+<div class="splash-page-container" id="home"> 
   <app-home></app-home>
 </div>
 
-<div class="section-container">
+<div class="section-container" id="about">
   <app-about></app-about>
 </div>
 
-<div class="section-container">
+<div class="section-container" id="resume">
   <app-resume></app-resume>
 </div>
 
-<div class="section-container">
+<div class="section-container" id="skills">
   <app-skills></app-skills>
 </div>
 
-<div class="section-container">
+<div class="section-container" id="testimonials">
   <app-testimonials></app-testimonials>
 </div>
 
-<div class="section-container">
+<div class="section-container" id="contact">
   <app-contact></app-contact>
 </div>

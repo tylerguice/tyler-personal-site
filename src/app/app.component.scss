@@ -1,6 +1,10 @@
 mat-toolbar {
     opacity: 0.85;
     position: fixed; 
+
+    .header-menu {
+        margin-left: auto;
+    }
 }
 
 .splash-page-container {

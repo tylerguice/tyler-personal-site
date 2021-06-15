@@ -6,13 +6,20 @@
 
 .heading {
     margin: auto; 
+    border-left: 5px solid white;
+    height: 300px;
+    display: flex;
 
-    p {
-        font-size: 28px;
-        color: white;
-    }
+    .action-container {
+        margin: auto 0 auto 50px;
 
-    button {
-        margin: auto;
+        p {
+            font-size: 68px;
+            color: white;
+        }
+    
+        button {
+            margin: auto;
+        }
     }
 }
