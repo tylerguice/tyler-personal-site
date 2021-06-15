@@ -1,5 +1,29 @@
-.container {
+.outer-container {
+    background-image: linear-gradient(90deg, #6303B1, #ff0099);
+    padding-top: 57px;
     height: 400px;
-    background-color: lightcoral;
-    padding: 50px 150px;
+}
+
+.angled-container {
+    height: 400px;
+    background-image: linear-gradient(90deg, #6303B1, #ff0099);
+}
+
+.section-content {
+    padding-top: 20px;
+}
+
+.side-header {
+    background-color: #212121;
+    width: 150px; 
+    height: 100%;
+
+    p {
+        writing-mode: vertical-rl;
+        text-orientation: sideways-right;
+        color: white;
+        font-size: 125px;
+        margin: auto;
+        padding-top: 50px;
+    }
 }

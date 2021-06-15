@@ -10,3 +10,16 @@ h1 {
     color: white;
     font-size: 36px !important;
 }
+
+.angled-container {
+    transform: skewY(-5deg);
+}
+
+.section-content {
+    max-width: 50em;
+    margin: 0 auto; 
+	transform: skewY(5deg);
+    color: white;
+    font-size: 18px;
+    padding-top: 70px;
+}
