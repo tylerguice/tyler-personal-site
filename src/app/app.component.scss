@@ -1,17 +1,42 @@
 mat-toolbar {
-    opacity: 0.85;
     position: fixed; 
+
+    .home-button {
+        font-size: 24px;
+    }
 
     .header-menu {
         margin-left: auto;
+        font-size: 18px;
     }
 }
 
 .splash-page-container {
-    background-image: url("../assets/images/tetons-background.jpg");
     height: 100%; 
+    background-image: url("../assets/images/tetons-black-white.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.overlay {
+    opacity: 0.5;
+    height: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 

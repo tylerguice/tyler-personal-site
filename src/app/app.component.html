@@ -1,5 +1,5 @@
 <mat-toolbar>  
-  <a href="#home" mat-button>Tyler Guice</a>
+  <a class="home-button" href="#home" mat-button>Tyler Guice</a>
   <div class="header-menu">
     <a href="#about" mat-button>About</a>
     <a href="#resume" mat-button>Resume</a>
@@ -9,8 +9,10 @@
   </div>
 </mat-toolbar>
 
-<div class="splash-page-container" id="home"> 
-  <app-home></app-home>
+<div class="splash-page-container" id="home">
+  <div class="overlay">
+    <app-home></app-home>
+  </div> 
 </div>
 
 <div class="section-container" id="about">
