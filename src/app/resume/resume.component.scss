@@ -1,8 +1,16 @@
-.angled-container {
-    // height: 400px;
-    padding: 70px 0;
+.container {
     background-image: linear-gradient(45deg, #000428, #004e92);
 }
 
-.section-content {
+h1 {
+    margin-bottom: 35px;
+}
+
+mat-icon {
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 17px;
+    margin: 0;
 }

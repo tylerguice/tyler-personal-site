@@ -1,20 +1,16 @@
-html {
-    background-image: linear-gradient(90deg, #cb2d3e, #ef473a);
-}
-
 .contact-container {
     padding: 70px 0;
-    // height: 400px;
     background-image: linear-gradient(90deg, #cb2d3e, #ef473a);
-    // clip-path: polygon(0 28%,100% 0,100% 100%,0 100%);
-    // position: relative;
-    // bottom: 56px;
 }
 
 .content {
-    // padding-top: 125px;
     max-width: 50em;
     margin: 0 auto;
     color: white;
     font-size: 18px;
 }
+
+a:link {
+    text-decoration: none;
+}
+  

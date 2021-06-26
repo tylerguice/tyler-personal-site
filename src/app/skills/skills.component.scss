@@ -1,7 +1,31 @@
 .angled-container {
     // height: 400px;
-    background-image: linear-gradient(45deg, #3fada8, #808080);
+    background-image: linear-gradient(45deg, #0687BD, #35D2E8);
 }
 
-.section-content {
+.content {
+    display: flex;
+    font-size: 16px;
+}
+
+.left-container {
+    flex: 1; 
+    margin: 40px 50px 0 0;
+}
+
+.right-container {
+    flex: 1;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.heading {
+    margin: 0;
+    font-weight: bold; 
+}
+
+h1 {
+    margin: 0;
 }

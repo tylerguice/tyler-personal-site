@@ -1,8 +1,9 @@
 <div class="angled-container">
+  
   <div class="testimonial-content">
     <mat-carousel
       timings="250ms ease-in"
-      [autoplay]="true"
+      [autoplay]="false"
       interval="5000"
       color="accent"
       maxWidth="auto"
@@ -23,9 +24,9 @@
 
         <div class="carousel-content">
           <div class="message-container">
-            <p class="testimonial-message">{{testimonial.message}}</p>
+            <p class="testimonial-message">&quot;{{testimonial.message}}&quot;</p>
             <div class="author-info">
-              <p class="author-name">{{testimonial.author}}</p>
+              <p class="author-name">&mdash; {{testimonial.author}}</p>
               <p class="author-role">{{testimonial.role}}</p>  
             </div>  
           </div>
