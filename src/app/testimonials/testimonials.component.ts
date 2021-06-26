@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+
 
 @Component({
   selector: 'app-testimonials',
@@ -17,16 +19,22 @@ export class TestimonialsComponent implements OnInit {
     },
     {
       message: 'Tyler is loyal, dependable, is always seeking to improve, adheres to best practices, ' +
-               'and has an excellent eye for detail. For over four years that I\'ve worked ' +
-               'with him, he has proven to be a valuable asset on many major projects.',
+               'and has an excellent eye for detail. I\'ve worked with him for over four years ' +
+               'and he has proven to be a valuable asset on many major projects.',
       author: 'Neil Purcell',
       role: 'Lead Application Developer, 4.5 years'
     },
     {
       message: 'Placeholder text....',
-      author: 'Tyler Biggert',
-      role: 'Junior Developer, 1.5 years'
+      author: 'Anne-Marie Williams',
+      role: 'Lead Business Analyst, 4.5 years'
     }
+  ];
+
+  slides = [
+    {'image': 'src/assets/images/blue-background-gradiant.jpg'},
+    {'image': 'src/assets/images/blue-background-gradiant.jpg'},
+    {'image': 'src/assets/images/blue-background-gradiant.jpg'},
   ];
 
   constructor() { }

@@ -11,6 +11,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { RoutingModule } from './routes/routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImportsModule } from './material-imports.module';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MaterialImportsModule } from './material-imports.module';
     BrowserModule,
     RoutingModule,
     BrowserAnimationsModule,
-    MaterialImportsModule
+    MaterialImportsModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

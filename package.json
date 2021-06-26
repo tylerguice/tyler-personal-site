@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^12.0.4",
     "@angular/platform-browser-dynamic": "^12.0.4",
     "@angular/router": "^12.0.4",
+    "@ngmodule/material-carousel": "^0.6.0",
     "core-js": "^2.5.4",
     "rxjs": "6.6.7",
     "tslib": "^1.10.0",
