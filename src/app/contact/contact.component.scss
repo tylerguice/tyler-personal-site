@@ -12,5 +12,19 @@
 
 a:link {
     text-decoration: none;
+    color: white;
 }
   
+.copyright-container {
+    background-color: #212121;
+    padding: 35px 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+
+    img {
+        height: 24px;
+        position: relative;
+        top: 5px;
+    }
+}

@@ -1,6 +1,6 @@
 mat-toolbar {
     position: fixed; 
-    z-index: 1;
+    z-index: 5;
 
     .home-button {
         font-size: 24px;
@@ -14,7 +14,7 @@ mat-toolbar {
 
 .splash-page-container {
     height: 100%; 
-    background-image: url("../assets/images/tetons-black-white.jpg");
+    background-image: url("../assets/images/hexagon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
