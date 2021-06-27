@@ -23,7 +23,7 @@ export class TestimonialsComponent implements OnInit {
       role: 'Lead Application Developer'
     },
     {
-      message: 'Tyler is a dependable developer who is quick on his feet when it comes to researching and resolving issues. ' +
+      message: 'Tyler is quick on his feet when it comes to researching and resolving issues. ' +
                'He is my go-to developer to ask questions and is always willing to take the time to explain what I ' +
                'don\'t fully understand. ' +
                'His code is reliable and I can always rely on his thorough unit testing.',

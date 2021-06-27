@@ -1,11 +1,11 @@
 <mat-toolbar>  
-  <a class="home-button" href="#home" mat-button>Tyler Guice</a>
+  <button class="home-button" mat-button (click)="scrollToElement('home')">Tyler Guice</button>
   <div class="header-menu">
-    <a href="#about" mat-button>About</a>
-    <a href="#resume" mat-button>Resume</a>
-    <a href="#skills" mat-button>Skills</a>
-    <a href="#testimonials" mat-button>Testimonials</a>
-    <a href="#contact" mat-button>Contact</a>
+    <button mat-button (click)="scrollToElement('about')">About</button>
+    <button mat-button (click)="scrollToElement('resume')">Resume</button>
+    <button mat-button (click)="scrollToElement('skills')">Skills</button>
+    <button mat-button (click)="scrollToElement('testimonials')">Testimonials</button>
+    <button mat-button (click)="scrollToElement('contact')">Contact</button>
   </div>
 </mat-toolbar>
 
