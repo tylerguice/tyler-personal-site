@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: '"Montserrat", sans-serif;');
+@include mat-core($custom-typography);
+
+// $custom-typography: mat-typography-config($font-family: '"Roboto Condensed", sans-serif;');
+// @include mat-core($custom-typography);
+
+html, body { height: 100%; }
+body { margin: 0; }
+
+h1 {
+    color: white;
+    font-size: 46px !important;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+}
+
+.angled-container {
+    // transform: skewY(-5deg);
+}
+
+.section-content {
+    max-width: 50em;
+    margin: 0 auto; 
+	// transform: skewY(5deg);
+    color: white;
+    font-size: 18px;
+    padding: 70px 0;
+}

@@ -1,0 +1,57 @@
+.contact-container {
+    padding: 70px 0;
+    background-image: linear-gradient(90deg, #cb2d3e, #ef473a);
+}
+
+.content {
+    max-width: 50em;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    display: inline-block;
+}
+
+a:link {
+    color: white;
+}
+
+h3 {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.social-link {
+    transition: transform 250ms;
+}
+
+.social-link:hover {
+    transform: translateY(-8px);
+}
+  
+.copyright-container {
+    background-color: #212121;
+    padding: 35px 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+
+    img {
+        height: 24px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.left-container {
+    max-width: 50%;
+    font-size: 16px;
+    padding-top: 35px;
+}
+
+mat-icon {
+    position: relative;
+    top: 6px;
+}

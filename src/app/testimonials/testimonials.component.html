@@ -1,0 +1,39 @@
+<div class="angled-container">
+  
+  <div class="testimonial-content">
+    <mat-carousel
+      timings="250ms ease-in"
+      [autoplay]="false"
+      interval="5000"
+      color="accent"
+      maxWidth="auto"
+      proportion="25"
+      slides="3"
+      [loop]="true"
+      [hideArrows]="false"
+      [hideIndicators]="false"
+      [useKeyboard]="true"
+      [useMouseWheel]="false"
+      orientation="ltr">
+
+      <mat-carousel-slide
+        #matCarouselSlide
+        *ngFor="let testimonial of testimonials"
+        overlayColor="#00000040"
+        [hideOverlay]="true">
+
+        <div class="carousel-content">
+          <div class="message-container">
+            <p class="testimonial-message">&quot;{{testimonial.message}}&quot;</p>
+            <div class="author-info">
+              <p class="author-name">&mdash; {{testimonial.author}}</p>
+              <p class="author-role">{{testimonial.role}}</p>  
+            </div>  
+          </div>
+        </div>
+
+      </mat-carousel-slide>
+    </mat-carousel>
+
+  </div>
+</div>
