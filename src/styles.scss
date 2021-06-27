@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-$custom-typography: mat-typography-config($font-family: '"PT Sans", sans-serif;');
+$custom-typography: mat-typography-config($font-family: '"Montserrat", sans-serif;');
 @include mat-core($custom-typography);
 
 // $custom-typography: mat-typography-config($font-family: '"Roboto Condensed", sans-serif;');
@@ -11,7 +11,8 @@ body { margin: 0; }
 
 h1 {
     color: white;
-    font-size: 36px !important;
+    font-size: 46px !important;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
 }
 
 .angled-container {

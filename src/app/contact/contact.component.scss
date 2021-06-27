@@ -10,9 +10,25 @@
     font-size: 18px;
 }
 
+a {
+    display: inline-block;
+}
+
 a:link {
-    text-decoration: none;
     color: white;
+}
+
+h3 {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.social-link {
+    transition: transform 250ms;
+}
+
+.social-link:hover {
+    transform: translateY(-8px);
 }
   
 .copyright-container {
@@ -27,4 +43,14 @@ a:link {
         position: relative;
         top: 5px;
     }
+}
+
+.left-container {
+    max-width: 50%;
+    font-size: 16px;
+}
+
+mat-icon {
+    position: relative;
+    top: 6px;
 }

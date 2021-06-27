@@ -12,14 +12,50 @@
 
     .action-container {
         margin: auto 0 auto 50px;
+        text-align: center;
 
-        p {
-            font-size: 68px;
+        .title {
+            font-size: 90px;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
             color: white;
+        }
+
+        .subtitle {
+            font-size: 36px;
+            color: white;
+            margin-top: 25px;
         }
     
         button {
             margin: auto;
         }
+    }
+}
+
+.scroll-action-container {
+    position: absolute; 
+    left: 50%; 
+    bottom: 60px;
+
+    .scroll-button {
+        position: relative; 
+        left: -50%;
+        font-size: 28px;
+        color: white;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        cursor: pointer;
+        transition: transform 250ms;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+        .line-break {
+            width: 100%;
+        }
+    }
+
+    .scroll-button:hover {
+        transform: translateY(10px);
     }
 }
