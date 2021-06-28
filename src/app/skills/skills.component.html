@@ -1,9 +1,9 @@
 <div class="angled-container">
-  <div class="section-content">
+  <div class="section-content" [style.max-width]="isMobile ? '75%' : '50em'">
     <h1>What can he do?</h1>
 
     <div class="content">
-      <div class="left-container">
+      <div class="left-container" [style.margin]="isMobile ? '40px 0 0 0' : '40px 50px 0 0'">
         <p class="heading"><strong>Technical Skills</strong></p>
         <p class="description">
           I have years of experience as a full-stack web developer, including expertise in technologies 
@@ -24,7 +24,7 @@
         </p>
 
       </div>
-      <div class="right-container">
+      <div *ngIf="!isMobile" class="right-container">
         <img src="../../assets/images/programmer.png">
       </div>
     </div>

@@ -1,10 +1,10 @@
 <div class="container">
-  <div class="section-content">
+  <div class="section-content" [style.max-width]="isMobile ? '75%' : '50em'">
 
     <h1>What has he done?</h1>
 
     <mat-accordion>
-      <mat-expansion-panel hideToggle expanded="true">
+      <mat-expansion-panel expanded="true">
         <mat-expansion-panel-header>
           <mat-panel-title>
             <mat-icon>work</mat-icon>
@@ -50,7 +50,7 @@
 
       </mat-expansion-panel>
 
-      <mat-expansion-panel hideToggle>
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             <mat-icon>work</mat-icon>
@@ -80,7 +80,7 @@
 
       </mat-expansion-panel>
 
-      <mat-expansion-panel hideToggle>
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>            
             <mat-icon>school</mat-icon>

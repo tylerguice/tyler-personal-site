@@ -55,3 +55,15 @@ mat-icon {
     position: relative;
     top: 6px;
 }
+
+// mobile
+.mobile-content {
+    max-width: 75%;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.mobile-social-container, .mobile-contact-container {
+    padding-top: 25px;
+}

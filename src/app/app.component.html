@@ -1,36 +1,46 @@
 <mat-toolbar>  
   <button class="home-button" mat-button (click)="scrollToElement('home')">Tyler Guice</button>
-  <div class="header-menu">
+  <div *ngIf="!isMobile" class="header-menu">
     <button mat-button (click)="scrollToElement('about')">About</button>
     <button mat-button (click)="scrollToElement('resume')">Resume</button>
     <button mat-button (click)="scrollToElement('skills')">Skills</button>
     <button mat-button (click)="scrollToElement('testimonials')">Testimonials</button>
     <button mat-button (click)="scrollToElement('contact')">Contact</button>
   </div>
+  <div *ngIf="isMobile" class="header-menu">
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="scrollToElement('about')">About</button>
+      <button mat-menu-item (click)="scrollToElement('resume')">Resume</button>
+      <button mat-menu-item (click)="scrollToElement('skills')">Skills</button>
+      <!-- <button mat-menu-item (click)="scrollToElement('testimonials')">Testimonials</button> -->
+      <button mat-menu-item (click)="scrollToElement('contact')">Contact</button>
+    </mat-menu>
+  </div>
 </mat-toolbar>
 
 <div class="splash-page-container" id="home">
   <div class="overlay">
-    <app-home></app-home>
+    <app-home [isMobile]="isMobile"></app-home>
   </div> 
 </div>
 
 <div class="section-container" id="about">
-  <app-about></app-about>
+  <app-about [isMobile]="isMobile"></app-about>
 </div>
 
 <div class="section-container" id="resume">
-  <app-resume></app-resume>
+  <app-resume [isMobile]="isMobile"></app-resume>
 </div>
 
 <div class="section-container" id="skills">
-  <app-skills></app-skills>
+  <app-skills [isMobile]="isMobile"></app-skills>
 </div>
 
 <div class="section-container" id="testimonials">
-  <app-testimonials></app-testimonials>
+  <app-testimonials *ngIf="!isMobile"></app-testimonials>
 </div>
 
 <div class="section-container" id="contact">
-  <app-contact></app-contact>
+  <app-contact [isMobile]="isMobile"></app-contact>
 </div>

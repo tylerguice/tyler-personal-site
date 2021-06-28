@@ -20,10 +20,10 @@
     float: left;
 
     img {
-        width:300px;
-        height:300px;
-        object-fit:cover;
-        border-radius:50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 }
 
@@ -39,5 +39,24 @@
         font-size: 125px;
         margin: auto;
         padding-top: 50px;
+    }
+}
+
+.mobile-container {
+    max-width: 75%;
+    display: block;
+    margin: auto;
+
+    img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    h1 {
+        padding-top: 35px;
     }
 }

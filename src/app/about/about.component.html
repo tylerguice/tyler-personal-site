@@ -1,28 +1,53 @@
 <div class="container">
   <div class="section-content">
 
-    <div class="image-container">
+    <ng-container *ngIf="!isMobile">
+      <div class="image-container">
+        <img src="../../assets/images/headshot.jpg" alt="headshot">
+      </div>
+  
+      <h1>Who is he?</h1>
+  
+      <p>
+        Hi there! I’m Tyler Guice - connoisseur of kaiju, pursuer of the paranormal, and learner of languages. 
+        Welcome to my humble abode among the cyberspace frontier.
+      </p>
+  
+      <p>
+        Professionally, I’m a web developer with a passion for design and a proclivity for enhancing user 
+        experiences. I’ve been told that I'm creative enough to think outside the box to create aesthetic 
+        designs and experiences, yet technical enough to translate those ideas into a functional product.
+      </p>
+  
+      <p>
+        In my spare time, you’ll find me meticulously organizing my Godzilla film collection, throwing on
+        a Spanish language vinyl record, leafing through an art book, baking some exorbitantly sugary pastry, 
+        or picking up a game of tennis or disc golf.
+      </p>  
+    </ng-container>
+
+    <div *ngIf="isMobile" class="mobile-container">
       <img src="../../assets/images/headshot.jpg" alt="headshot">
+
+      <h1>Who is he?</h1>
+  
+      <p>
+        Hi there! I’m Tyler Guice - connoisseur of kaiju, pursuer of the paranormal, and learner of languages. 
+        Welcome to my humble abode among the cyberspace frontier.
+      </p>
+  
+      <p>
+        Professionally, I’m a web developer with a passion for design and a proclivity for enhancing user 
+        experiences. I’ve been told that I'm creative enough to think outside the box to create aesthetic 
+        designs and experiences, yet technical enough to translate those ideas into a functional product.
+      </p>
+  
+      <p>
+        In my spare time, you’ll find me meticulously organizing my Godzilla film collection, throwing on
+        a Spanish language vinyl record, leafing through an art book, baking some exorbitantly sugary pastry, 
+        or picking up a game of tennis or disc golf.
+      </p>  
     </div>
-
-    <h1>Who is he?</h1>
-
-    <p>
-      Howdy! I’m Tyler Guice - connoisseur of kaiju, pursuer of the paranormal, and learner of languages. 
-      Welcome to my humble abode among the cyberspace frontier.
-    </p>
-
-    <p>
-      Professionally, I’m a web developer with a passion for design and a proclivity for enhancing user 
-      experiences. I’ve been told that I'm creative enough to think outside the box and create aesthetic 
-      designs, yet technical enough to translate those ideas into a functional product.
-    </p>
-
-    <p>
-      In my spare time, you’ll find me meticulously organizing my Godzilla film collection, throwing on
-      a Spanish language vinyl record, leafing through an art book, baking some exorbitantly sugary pastry, 
-      or picking up a game of tennis or disc golf.
-    </p>
 
   </div>
 </div>

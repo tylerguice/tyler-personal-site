@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsComponent implements OnInit {
 
+  @Input() isMobile: boolean;
   public testimonials = [
     {
       message: 'It’s not often you encounter someone with the talent, heart and skillset of Tyler Guice. ' +
@@ -26,7 +27,7 @@ export class TestimonialsComponent implements OnInit {
       message: 'Tyler is quick on his feet when it comes to researching and resolving issues. ' +
                'He is my go-to developer to ask questions and is always willing to take the time to explain what I ' +
                'don\'t fully understand. ' +
-               'His code is reliable and I can always rely on his thorough unit testing.',
+               'His code is reliable and I can always depend on his thorough unit testing.',
       author: 'Anne-Marie Williams',
       role: 'Lead Business Analyst'
     }
